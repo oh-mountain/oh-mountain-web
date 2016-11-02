@@ -35,7 +35,7 @@ header {
 }
 
 section {
-  min-width: 920px;
+  min-width: 320px;
   padding: 24px;
 }
 
@@ -43,6 +43,21 @@ section {
   margin-top: 36px;
 }
 
+.access {
+  position: relative;
+  padding: 0;
+}
+
+.access .balloon {
+  position: absolute;
+  top: 40px;
+  left: 16px;
+  background: #fff;
+  color: #ff0000;
+}
+
 footer {
+  height: 36px;
+  line-height: 36px;
   text-align: center;
 }
