@@ -3,64 +3,74 @@
 <head>
   <title>Oh!Mountain</title>
   <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
-  <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
+  <link rel="icon" type="img/vnd.microsoft.icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/index.css" media="all"/>
   <link rel="stylesheet" type="text/css" href="css/util.css" media="all"/>
 </head>
 <body onload="initialize();">
   <header>
     <div class="mr-16">
-      <span class="mr-16">ABOUT</span>
-      <span class="mr-16">DJ</span>
-      <span>ACCESS</span>
+      <a href="#"><span class="mr-16">INFOMATION</span></a>
+      <a href="#"><span class="mr-16">DJ</span></a>
+      <a href="#"><span class="mr-16">ABOUT</span></a>
+      <a href="#"><span>ACCESS</span></a>
     </div>
   </header>
 
   <section class="top">
-    <p>
-      Oh!Mountain忘年会2016
-    </p>
-    <p>
-      2016/12/18 Start:16:00
-      @下北沢ARENA
-      Entrance Free! 入場無料
-    </p>
+    <div class="contents">
+      <h1 class="mb-16">
+        Oh!Mountain忘年会2016
+      </h1>
+      <p>
+        <span class="fs-30 mr-4">2016.12.18</span>Start:16:00<br/>
+        <span class="f-bold">@<a href="http://arena.nomouze.jp/">ARENA下北沢</a><span><br/>
+        Entrance Free! 入場無料<br/>
+      </p>
+    </div>
   </section>
 
   <section class="about">
+    <h1 class="mb-16">
+      About Oh!Mountain
+    </h1>
     <p>
-      Oh!Mountain
+      2015年2月より、酒好き・音好き・アウトドア好きたちによりスタートしたフリーキーミュージックパーティ。
+      コンセプトらしいコンセプトは皆無、無駄に豪華なゲストDJを迎え、酒と音楽、時にBBQで焼かれる肉を堪能するパーティです。
     </p>
     <p>
-      2015年2月より酒好きアウトドア好き音好きたちによりスタートしたフリーキーミュージックパーティ。
-      コンセプトらしいコンセプトは皆無、無駄に豪華なゲストDJを迎え、酒と音楽、時にBBQで焼かれる肉を堪能するパーティです。
       音楽は４つ打ち、お酒はウーロンハイ(大ジョッキ)がメインとなっております。
     </p>
   </section>
 
+  <section class="dj">
+    <h1 class="mb-16">
+      DJ
+    </h1>
+    <p>
+      <span class="fs-18">ANNO / d0d1e / YAMADA / DJ Minato / mai</span><br/>
+    </p>
+    <p>
+      <span class="fs-18">...anymore</span><br/>
+    </p>
+  </section>
   <section class="info">
-    <p>
-      Oh!Mountain忘年会2016
-    </p>
-    <p>
-      2016/12/18@下北沢ARENA  Start:16:00
-      Entrance Free! 入場無料
-    </p>
-    <p>
-      DJs :
-      ANNO / d0d1e / YAMADA / DJ Minato / mai
-    </p>
-    <p>
+    <p class="fs-14 mb-8">
       兎にも角にも色々やらかしまくった2016年、忘れたいこと、たくさんありませんか？　そんな方は我々とともに忘れましょう！もちろん忘れたくない方もカモナジョイナス！
-      DJ陣はいつもの面々に加えて、過去出演してもらったDJやお世話になった方々にも参加してもらってのバトルロワイヤル形式でお送りします。いつも以上にフリーダム！何が起こるのか全く読めないわからないフリーキーなスタイルでサウンドをお届けします。飛び入りゲストもいるかも？そして気分次第で行われる気まぐれBBQが今回復活するらしいとか？
+    </p>
+    <p class="fs-14 mb-8">
+      DJ陣はいつもの面々に加えてゲスト盛り沢山のメガミックスでいつも以上にフリーキーにお送りします！そして気分次第で行われる気まぐれBBQが今回復活するらしいとか？
+    </p>
+    <p class="fs-14 mb-8">
       いつも通りの入場無料なのでふらりと来てもらっても大丈夫！お時間ある方はよろしくお願いします！
     </p>
   </section>
 
   <section class="timetable">
-    <p>
+    <h1 class="mb-16">
       TimeTable
-    </p>
+    </h1>
     <p>
       TBA
     </p>
@@ -68,9 +78,11 @@
 
   <section class="access">
     <div>
-      <div id="map_canvas" style="width:100%;height:500px;"/>
+      <div id="map_canvas" style="width:100%;height:400px;"/>
     </div>
-    <div class="balloon">ACCESS</div>
+    <h1 class="balloon">
+      ACCESS
+    </h1>
   </section>
 
   <footer>
@@ -79,18 +91,22 @@
   <script>
     function initialize() {
       var latlng = new google.maps.LatLng(35.659691, 139.668556);
+      var centeratlng = new google.maps.LatLng(35.661047, 139.667043);
       var marker = new google.maps.Marker({
         position: latlng,
         map: map,
         title: 'ARENA下北沢'
       });
       var myOptions = {
-        zoom: 18, /*拡大比率*/
+        zoom: 17, /*拡大比率*/
         center: latlng, /*表示枠内の中心点*/
-        mapTypeId: google.maps.MapTypeId.ROADMAP/*表示タイプの指定*/
+        mapTypeId: google.maps.MapTypeId.ROADMAP,/*表示タイプの指定*/
+        scrollwheel: false,
+        mapTypeControl: false
       };
       var map = new google.maps.Map(document.getElementById('map_canvas'), myOptions);
       marker.setMap(map);
+      map.setCenter(centeratlng);
     }
   </script>
 </body>
