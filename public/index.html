@@ -3,6 +3,7 @@
 <head>
   <title>Oh!Mountain</title>
   <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+  <script src="js/smooth-scroll.min.js"></script>
   <link rel="icon" type="img/vnd.microsoft.icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/index.css" media="all"/>
@@ -11,13 +12,13 @@
 <body onload="initialize();">
   <header class="header">
     <div class="mr-16">
-      <a href="#"><span class="mr-16">INFOMATION</span></a>
-      <a href="#"><span class="mr-16">DJ</span></a>
-      <a href="#"><span class="mr-16">ABOUT</span></a>
-      <a href="#"><span>ACCESS</span></a>
+      <a href="#about" data-scroll><span class="mr-16">ABOUT</span></a>
+      <a href="#dj" data-scroll><span class="mr-16">DJ</span></a>
+      <a href="#timetable" data-scroll><span class="mr-16">TIME TABLE</span></a>
+      <a href="#access" data-scroll><span>ACCESS</span></a>
     </div>
   </header>
-
+<div class="contents">
   <section class="top">
     <div class="contents">
       <h1 class="mb-16">
@@ -31,7 +32,7 @@
     </div>
   </section>
 
-  <section class="about">
+  <section id="about" class="about">
     <h1 class="mb-16">
       About Oh!Mountain
     </h1>
@@ -44,7 +45,7 @@
     </p>
   </section>
 
-  <section class="dj">
+  <section id="dj" class="dj">
     <h1 class="mb-16">
       DJ
     </h1>
@@ -67,7 +68,7 @@
     </p>
   </section>
 
-  <section class="timetable">
+  <section id="timetable" class="timetable">
     <h1 class="mb-16">
       TimeTable
     </h1>
@@ -76,7 +77,7 @@
     </p>
   </section>
 
-  <section class="access">
+  <section id="access" class="access">
     <div>
       <div id="map_canvas" style="width:100%;height:400px;"/>
     </div>
@@ -84,7 +85,7 @@
       ACCESS
     </h1>
   </section>
-
+</div>
   <footer>
       hashtag #oh_mountain忘年会
   </footer>
@@ -108,6 +109,10 @@
       marker.setMap(map);
       map.setCenter(centeratlng);
     }
+  </script>
+  <script>
+    // スムーススクロールを起動する
+    smoothScroll.init({offset : '36px'}) ;
   </script>
 </body>
 </html>
