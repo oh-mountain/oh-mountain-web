@@ -55,7 +55,7 @@ header {
 
 .header a {
   color: #ffffff;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .contents {
@@ -68,7 +68,14 @@ section {
 }
 
 .top {
-  padding-top: 36px;
+  margin-top: 36px;
+  padding: 0;
+  background-color: #f6f7f9;
+}
+
+.info a {
+  color: #ff0000;
+  text-decoration: none;
 }
 
 .event {
@@ -76,7 +83,7 @@ section {
 }
 
 .about {
-  background-color: #00ff00;
+  background-color: #f6f7f9;
 }
 
 .access {
@@ -85,7 +92,7 @@ section {
 }
 
 .timetable {
-  background-color: #ff00ff;
+  background-color: #f6f7f9;
 }
 
 .access .balloon {
@@ -100,4 +107,9 @@ footer {
   height: 72px;
   line-height: 72px;
   text-align: center;
+}
+
+.footer a {
+  color: #ff0000;
+  text-decoration: none;
 }
