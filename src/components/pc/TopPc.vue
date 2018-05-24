@@ -62,48 +62,54 @@
 
       <section id="access" class="access">
         <div>
-          <div id="map_canvas" style="width:100%;height:400px;"/>
+          <!--<div id="map_canvas" style="width:100%;height:400px;"/>-->
+          <gmap-map style="width:100%;height:400px;"
+                    ref="map_canvas"
+                    :zoom="17"
+                    mapTypedId={google.maps.MapTypeId.ROADMAP}
+          >
+            <gmap-marker
+              :key="index"
+              v-for="(m, index) in markers"
+              :position="m.position"
+              @click="center=m.position"
+            />
+            <gmap-info-window :position="{lat: 35.660050, lng: 139.668556}">
+              ARENA下北沢
+            </gmap-info-window>
+          </gmap-map>
         </div>
         <h1 class="balloon">
           ACCESS
         </h1>
       </section>
-
       <footer class="footer">
         more Infomation → <a href="https://www.facebook.com/events/188291821991019/" target="_blank">Facebook</a>
       </footer>
-      <!--<script>-->
-      <!--function initialize() {-->
-      <!--var latlng = new google.maps.LatLng(35.659691, 139.668556);-->
-      <!--var centeratlng = new google.maps.LatLng(35.661047, 139.667043);-->
-      <!--var marker = new google.maps.Marker({-->
-      <!--position : latlng,-->
-      <!--map      : map,-->
-      <!--title    : 'ARENA下北沢'-->
-      <!--});-->
-      <!--var myOptions = {-->
-      <!--zoom           : 17, /*拡大比率*/-->
-      <!--center         : latlng, /*表示枠内の中心点*/-->
-      <!--mapTypeId      : google.maps.MapTypeId.ROADMAP, /*表示タイプの指定*/-->
-      <!--scrollwheel    : false,-->
-      <!--mapTypeControl : false-->
-      <!--};-->
-      <!--var map = new google.maps.Map(document.getElementById('map_canvas'), myOptions);-->
-      <!--marker.setMap(map);-->
-      <!--map.setCenter(centeratlng);-->
-      <!--}-->
-      <!--</script>-->
-      <!--<script>-->
-      <!--// スムーススクロールを起動する-->
-      <!--smoothScroll.init({offset : '36px'});-->
-      <!--</script>-->
     </div>
   </div>
 </template>
 
 <script>
+const position = {lat: 35.659691, lng: 139.668556}
 export default {
-  name: 'TopPc'
+  name: 'TopPc',
+  mounted () {
+    // At this point, the child GmapMap has been mounted, but
+    // its map has not been initialized.
+    // Therefore we need to write mapRef.$mapPromise.then(() => ...)
+    this.$refs.map_canvas.$mapPromise.then((map) => {
+      map.panTo(position)
+    })
+  },
+  data () {
+    return {
+      markers: [{
+        position: position,
+        content: 'ARENA下北沢'
+      }]
+    }
+  }
 }
 </script>
 <style>
