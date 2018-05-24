@@ -70,7 +70,7 @@
       </section>
 
       <footer class="footer">
-        more Infomation → <a href="https://www.facebook.com/events/107512200032002/" target="_blank">Facebook</a>
+        more Infomation → <a href="https://www.facebook.com/events/188291821991019/" target="_blank">Facebook</a>
       </footer>
       <!--<script>-->
       <!--function initialize() {-->
