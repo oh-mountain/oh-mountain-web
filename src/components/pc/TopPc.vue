@@ -181,7 +181,7 @@ export default {
   }
 
   .contents {
-    min-width: 760px;
+    min-width: 100%;
   }
 
   section {

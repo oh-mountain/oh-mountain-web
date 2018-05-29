@@ -1,9 +1,11 @@
 <template>
   <div id="app">
-    <!--PC版-->
-    <TopPc v-if="!isMobile()"/>
-    <!--SP版-->
-    <TopSp v-if="isMobile()"/>
+    <!--&lt;!&ndash;PC版&ndash;&gt;-->
+    <!--<TopPc v-if="!isMobile()"/>-->
+    <!--&lt;!&ndash;SP版&ndash;&gt;-->
+    <!--<TopSp v-if="isMobile()"/>-->
+    <!--TODO: 一旦PC版を常に出す-->
+    <TopPc />
   </div>
 </template>
 
