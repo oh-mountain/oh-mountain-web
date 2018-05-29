@@ -3,7 +3,6 @@
     <header class="header">
       <div class="mr-16">
         <a href="#info" data-scroll><span class="mr-16">INFO</span></a>
-        <a href="#about" data-scroll><span class="mr-16">ABOUT</span></a>
         <a href="#dj" data-scroll><span class="mr-16">DJ</span></a>
         <a href="#timetable" data-scroll><span class="mr-16">TIME TABLE</span></a>
         <a href="#access" data-scroll><span>ACCESS</span></a>
@@ -25,18 +24,19 @@
             <span class="fs-30 mr-4">2018.07.07 SAT</span>Start:15:59 <span class="f-bold">@<a href="http://arena.nomouze.jp/">ARENA下北沢</a></span> <span class="fs-16">Entrance Free</span>
           </p>
           <p class="fs-14 mb-8">
-            House / Techno / Minimal / Disco...etc、イーブンキックのJourneyを演出、音好きのためのGrooveを作り上げて行くパーティです。踊ってよし飲んでよし食べてよし。入場は無料なので皆様奮ってご参加ください。
+            Oh!Mountainは2015年2月よりアウトドア好きのDJたちによりスタートした、下北沢発のFreakyなローカルパーティです。
+            House / Techno / Minimal / Disco...etc、イーブンキックのJourneyを演出、音好きのためのGroove/空間を作っていきます。
+            踊ってよし！飲んでよし！食べてよし。入場は無料なので皆様奮ってご参加ください。
           </p>
         </div>
       </section>
-      <section id="about" class="about">
-        <h1 class="mb-16">
-          About Oh!Mountain
-        </h1>
-        <p>
-          2015年2月よりアウトドア好きのDJたちによりスタートしたFreakyなミュージックパーティ。音好きのためのHouse/Techno/Discoなどダンスミュージックを幅広く鳴らす。
-        </p>
-      </section>
+      <!--<section id="about" class="about">-->
+        <!--<h1 class="mb-16">-->
+          <!--About Oh!Mountain-->
+        <!--</h1>-->
+        <!--<p>-->
+        <!--</p>-->
+      <!--</section>-->
 
       <section id="dj" class="dj">
         <h1 class="mb-16">
@@ -204,7 +204,7 @@ export default {
     background-color: #ff0000;
   }
 
-  .about {
+  .dj {
     background-color: #f6f7f9;
   }
 
@@ -214,7 +214,7 @@ export default {
   }
 
   .timetable {
-    background-color: #f6f7f9;
+    background-color: #ffffff;
   }
 
   .access .balloon {
