@@ -11,22 +11,21 @@
     </header>
     <div class="contents">
       <section class="top">
-        <div style="width: 760px;margin: auto;">
-          <img src="../../assets/img/mountain20180421.png" alt="Oh!Mountain 2018/07/07" width="100%">
-        </div>
-      </section>
+        <!--<div style="width: 760px">-->
+          <!--<img src="../../assets/img/mountain20180707.png" alt="Oh!Mountain 2018/07/07" height="100%">-->
+        <!--</div>-->
+        </section>
       <section id="info" class="info">
         <div class="contents">
+          <img src="../../assets/img/mountain20180707.png" alt="Oh!Mountain 2018/07/07" height="100%" style="margin-top: 32px">
           <h1 class="mb-16">
             Oh!Mountain
           </h1>
           <p class="mb-24">
-            <span class="fs-30 mr-4">2018.04.21 SAT</span>Start:16:00<br/>
-            <span class="f-bold">@<a href="http://arena.nomouze.jp/">ARENA下北沢</a></span><br/>
-            <span class="fs-16">Entrance Free</span>
+            <span class="fs-30 mr-4">2018.07.07 SAT</span>Start:15:59 <span class="f-bold">@<a href="http://arena.nomouze.jp/">ARENA下北沢</a></span> <span class="fs-16">Entrance Free</span>
           </p>
           <p class="fs-14 mb-8">
-            MinimalからDiscoまで、イーブンキックのJourneyを演出、音好きのためのGrooveを作り上げて行くパーティです。今回よりサウンドシステム強化する予定。踊ってよし飲んでよし食べてよし。入場は無料なので皆様奮ってご参加ください。
+            House / Techno / Minimal / Disco...etc、イーブンキックのJourneyを演出、音好きのためのGrooveを作り上げて行くパーティです。踊ってよし飲んでよし食べてよし。入場は無料なので皆様奮ってご参加ください。
           </p>
         </div>
       </section>
