@@ -1,129 +1,14 @@
-<!DOCTYPE html>
-<html lang="JP">
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<head>
-  <title>Oh!Mountain</title>
-  <script src="https://maps.google.com/maps/api/js?key=AIzaSyC8ceQxffcrvJkKTlleTKfBOuQWQLRiet8"></script>
-  <script src="js/smooth-scroll.min.js"></script>
-  <link rel="icon" type="image/png" href="img/favicon.ico" sizes="32x32">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/index.css" media="all" />
-  <link rel="stylesheet" type="text/css" href="css/util.css" media="all" />
-</head>
-<body onload="initialize();">
-<script>
-  (function (i, s, o, g, r, a, m) {
-    i['GoogleAnalyticsObject'] = r;
-    i[r] = i[r] || function () {
-      (i[r].q = i[r].q || []).push(arguments)
-    }, i[r].l = 1 * new Date();
-    a = s.createElement(o),
-      m = s.getElementsByTagName(o)[0];
-    a.async = 1;
-    a.src = g;
-    m.parentNode.insertBefore(a, m)
-  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon type=image/png href=/static/favicon.ico sizes=32x32><link href="https://fonts.googleapis.com/css?family=Montserrat" rel=stylesheet><title>Oh!Mountain</title><link href=/static/css/app.ae684e1b44ae57d3dab010838314acb9.css rel=stylesheet></head><body><script>(function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-2144988-11', 'auto');
-  ga('send', 'pageview');
-
-</script>
-<header class="header">
-  <div class="mr-16">
-    <a href="#info" data-scroll><span class="mr-16">INFO</span></a>
-    <a href="#about" data-scroll><span class="mr-16">ABOUT</span></a>
-    <a href="#dj" data-scroll><span class="mr-16">DJ</span></a>
-    <a href="#timetable" data-scroll><span class="mr-16">TIME TABLE</span></a>
-    <a href="#access" data-scroll><span>ACCESS</span></a>
-  </div>
-</header>
-<div class="contents">
-  <section class="top">
-    <div style="width: 760px;margin: auto;">
-      <img src="img/mountain20180421.png" alt="Oh!Mountain 2018/04/21" width="100%">
-    </div>
-  </section>
-  <section id="info" class="info">
-    <div class="contents">
-      <h1 class="mb-16">
-        Oh!Mountain
-      </h1>
-      <p class="mb-24">
-        <span class="fs-30 mr-4">2018.04.21 SAT</span>Start:16:00<br />
-        <span class="f-bold">@<a href="http://arena.nomouze.jp/">ARENA下北沢</a></span><br />
-        <span class="fs-16">Entrance Free</span>
-      </p>
-      <p class="fs-14 mb-8">
-        MinimalからDiscoまで、イーブンキックのJourneyを演出、音好きのためのGrooveを作り上げて行くパーティです。今回よりサウンドシステム強化する予定。踊ってよし飲んでよし食べてよし。入場は無料なので皆様奮ってご参加ください。
-      </p>
-    </div>
-  </section>
-  <section id="about" class="about">
-    <h1 class="mb-16">
-      About Oh!Mountain
-    </h1>
-    <p>
-      2015年2月よりアウトドア好きのDJたちによりスタートしたFreakyなミュージックパーティ。音好きのためのHouse/Techno/Discoなどダンスミュージックを幅広く鳴らす。
-    </p>
-  </section>
-  
-  <section id="dj" class="dj">
-    <h1 class="mb-16">
-      DJ
-    </h1>
-    <p class="fs-24 mb-8">
-      dot nine<br>
-      ANNO<br>
-      YMD<br>
-      DJ Minato<br>
-    </p>
-  </section>
-  
-  <section id="timetable" class="timetable">
-    <h1 class="mb-16">
-      TimeTable
-    </h1>
-    <p>
-      TBA
-    </p>
-  </section>
-  
-  <section id="access" class="access">
-    <div>
-      <div id="map_canvas" style="width:100%;height:400px;" />
-    </div>
-    <h1 class="balloon">
-      ACCESS
-    </h1>
-  </section>
-  
-  <footer class="footer">
-    more Infomation → <a href="https://www.facebook.com/events/107512200032002/" target="_blank">Facebook</a>
-  </footer>
-  <script>
-    function initialize() {
-      var latlng = new google.maps.LatLng(35.659691, 139.668556);
-      var centeratlng = new google.maps.LatLng(35.661047, 139.667043);
-      var marker = new google.maps.Marker({
-        position : latlng,
-        map      : map,
-        title    : 'ARENA下北沢'
-      });
-      var myOptions = {
-        zoom           : 17, /*拡大比率*/
-        center         : latlng, /*表示枠内の中心点*/
-        mapTypeId      : google.maps.MapTypeId.ROADMAP, /*表示タイプの指定*/
-        scrollwheel    : false,
-        mapTypeControl : false
-      };
-      var map = new google.maps.Map(document.getElementById('map_canvas'), myOptions);
-      marker.setMap(map);
-      map.setCenter(centeratlng);
-    }
-  </script>
-  <script>
-    // スムーススクロールを起動する
-    smoothScroll.init({offset : '36px'});
-  </script>
-</body>
-</html>
+      ga('create', 'UA-2144988-11', 'auto');
+      ga('send', 'pageview');</script><div id=app></div><script type=text/javascript src=/static/js/manifest.2ae2e69a05c33dfc65f8.js></script><script type=text/javascript src=/static/js/vendor.35e3094e36485729d5e8.js></script><script type=text/javascript src=/static/js/app.cac74c848b4ac6606857.js></script></body></html>
