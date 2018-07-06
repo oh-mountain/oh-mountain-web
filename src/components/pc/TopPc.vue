@@ -55,7 +55,10 @@
           TimeTable
         </h1>
         <p>
-          TBA
+          15:59 h - 18:00 h  dot nine<br/>
+          18:00 h - 19:00 h  DJ Minato<br/>
+          19:00 h - 20:30 h  ANNO<br/>
+          20:30 h - End      YMD<br/>
         </p>
       </section>
 
