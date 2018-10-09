@@ -21,7 +21,7 @@
             Oh!Mountain
           </h1>
           <p class="mb-24">
-            <span class="fs-30 mr-4">2018.10.20 SAT</span>Start:16:00 <span class="f-bold">@<a href="http://arena.nomouze.jp/">ARENA下北沢</a></span> <span class="fs-16">Entrance Free</span>
+            <span class="fs-30 mr-4">2018.10.20 SAT</span>Start:16:00 <span class="f-bold">@<a href="http://arena.nomouze.jp/">ARENA下北沢</a></span> <span class="fs-16">Charge Free (Please 1 Order!)</span>
           </p>
           <p class="fs-14 mb-8">
             Oh!Mountainは2015年2月よりアウトドア好きのDJたちによりスタートした、下北沢発のFreakyなローカルパーティです。
@@ -110,7 +110,7 @@ export default {
       markers: [
         {
           position: position,
-          content: 'ARENA下北沢'
+          content: 'ARENA下北沢/'
         }
       ]
     }
