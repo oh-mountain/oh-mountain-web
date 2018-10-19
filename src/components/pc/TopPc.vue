@@ -59,7 +59,12 @@
           TimeTable
         </h1>
         <p>
-          TBA
+          16:00 - 17:00 dot nine<br>
+          17:00 - 18:00 Minato<br>
+          18:00 - 19:30 ANNO<br>
+          19:30 - 20:00 Komagata <br>
+          20:00 - 21:00 MEGUMI<br>
+          21:00 - Close dot nine<br>
         </p>
       </section>
 
