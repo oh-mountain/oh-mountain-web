@@ -16,21 +16,15 @@
         </section>
       <section id="info" class="info">
         <div class="contents">
-          <img src="../../assets/img/mountain20190126.jpg" alt="Oh!Mountain 2019/01/26" height="100%" style="margin-top: 32px">
+          <img src="../../assets/img/mountain20190420.png" alt="Oh!Mountain 2019/04/20" width="25%" style="margin-top: 32px">
           <h1 class="mb-16">
             Oh!Mountain
           </h1>
           <p class="mb-24">
-            <span class="fs-30 mr-4">2019.01.26 SAT</span>Start:16:00 <span class="f-bold">@<a href="http://arena.nomouze.jp/">ARENA下北沢</a></span> <span class="fs-16">Charge Free (Please 1 Order!)</span>
+            <span class="fs-30 mr-4">2019.04.20 SAT</span>Start:16:00 <span class="f-bold">@<a href="http://arena.nomouze.jp/">ARENA下北沢</a></span> <span class="fs-16">Charge Free (Please 1 Order!)</span>
           </p>
-          <p class="fs-14 mb-8">
-            Oh!Mountainは2015年2月よりアウトドア好きのDJたちによりスタートした、下北沢発のFreakyなローカルパーティです。
-            House / Techno / Minimal / Disco...etc、イーブンキックのダンスミュージックのJourneyを演出、音好きのためのGroove/空間を作っていきます。
-            踊ってよし！飲んでよし！食べてよし！ChargeFree(要1オーダー)ですのでお気軽にご参加くださいませ！
-          </p>
-          <p>
-            今回よりdot nineが不在になりますが 、代わりに今回から加入！幡ヶ谷のディスコクイーンことKayさんがヴァイナルをマンキューソスタイルでプレイ！グッドミュージックかけまってくれるので期待大！
-          </p>
+          <p class="fs-14 mb-8">Music: House / Techno / Disco / ...Anymore</p>
+
         </div>
       </section>
       <!--<section id="about" class="about">-->
@@ -46,10 +40,11 @@
           DJ
         </h1>
         <p class="fs-24 mb-8">
-          kay<br/>
+          d0d1e<br/>
           ANNO<br/>
-          Yamada<br/>
-          DJ Minato<br/>
+          YMD<br/>
+          MINATO<br/>
+          mai<br/>
         </p>
       </section>
 
@@ -58,13 +53,7 @@
           TimeTable
         </h1>
         <p>
-          1600 DJ Minato<br/>
-          1730 Yamada<br/>
-          1815 kay<br/>
-          1900 ANNO<br/>
-          2030 kay<br/>
-          2115 Yamada<br/>
-          2200 B2b?<br/>
+          TBA
         </p>
       </section>
 
