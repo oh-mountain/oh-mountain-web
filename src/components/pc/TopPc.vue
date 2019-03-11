@@ -16,7 +16,7 @@
         </section>
       <section id="info" class="info">
         <div class="contents">
-          <img src="../../assets/img/mountain20190420.png" alt="Oh!Mountain 2019/04/20" width="25%" style="margin-top: 32px">
+          <img src="../../assets/img/mountain20190420.png" alt="Oh!Mountain 2019/04/20" height="640px" style="margin-top: 32px">
           <h1 class="mb-16">
             Oh!Mountain
           </h1>
