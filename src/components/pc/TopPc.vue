@@ -21,7 +21,7 @@
             Oh!Mountain
           </h1>
           <p class="mb-24">
-            <span class="fs-30 mr-4">2019.04.20 SAT</span>Start:16:00 <span class="f-bold">@<a href="http://arena.nomouze.jp/">ARENA下北沢</a></span> <span class="fs-16">Charge Free (Please 1 Order!)</span>
+            <span class="fs-30 mr-4">2019.04.20 SAT</span>OPEN:16:00 <span class="f-bold">@<a href="http://arena.nomouze.jp/">ARENA下北沢</a></span> <span class="fs-16">Charge Free (Please 1 Order!)</span>
           </p>
           <p class="fs-14 mb-8">Music: House / Techno / Disco / ...Anymore</p>
 
@@ -53,7 +53,10 @@
           TimeTable
         </h1>
         <p>
-          TBA
+          17:15 - 18:00 mai <br/>
+          18:00 - 19:00 MINATO <br/>
+          19:00 - 20:30 ANNO <br/>
+          20:30 - end  YMD <br/>
         </p>
       </section>
 
