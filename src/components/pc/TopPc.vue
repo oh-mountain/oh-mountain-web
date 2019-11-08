@@ -1,13 +1,13 @@
 <template>
   <div>
-    <header class="header">
-      <div class="mr-16">
-        <a href="#info" data-scroll><span class="mr-16">INFO</span></a>
-        <a href="#dj" data-scroll><span class="mr-16">DJ</span></a>
-        <a href="#timetable" data-scroll><span class="mr-16">TIME TABLE</span></a>
-        <a href="#access" data-scroll><span>ACCESS</span></a>
-      </div>
-    </header>
+<!--    <header class="header">-->
+<!--      <div class="mr-16">-->
+<!--        <a href="#info" data-scroll><span class="mr-16">INFO</span></a>-->
+<!--        <a href="#dj" data-scroll><span class="mr-16">DJ</span></a>-->
+<!--        <a href="#timetable" data-scroll><span class="mr-16">TIME TABLE</span></a>-->
+<!--        <a href="#access" data-scroll><span>ACCESS</span></a>-->
+<!--      </div>-->
+<!--    </header>-->
     <div class="contents">
       <section class="top">
         <!--<div style="width: 760px">-->
@@ -16,12 +16,12 @@
         </section>
       <section id="info" class="info">
         <div class="contents">
-          <img src="../../assets/img/mountain20190420.png" alt="Oh!Mountain 2019/04/20" height="640px" style="margin-top: 32px">
+          <img src="../../assets/img/mountain20191123.png" alt="Oh!Mountain 2019/04/20" height="640px" style="margin-top: 32px"  class="mb-16">
           <h1 class="mb-16">
             Oh!Mountain
           </h1>
           <p class="mb-24">
-            <span class="fs-30 mr-4">2019.04.20 SAT</span>OPEN:16:00 <span class="f-bold">@<a href="http://arena.nomouze.jp/">ARENA下北沢</a></span> <span class="fs-16">Charge Free (Please 1 Order!)</span>
+            <span class="fs-30 mr-4">2019.11.23 SAT</span>OPEN:16:00 <span class="f-bold">@<a href="http://arena.nomouze.jp/">ARENA下北沢</a></span> <span class="fs-16">Charge Free (Please 1 Order!)</span>
           </p>
           <p class="fs-14 mb-8">Music: House / Techno / Disco / ...Anymore</p>
 
@@ -40,25 +40,25 @@
           DJ
         </h1>
         <p class="fs-24 mb-8">
+          EMOKEN[ELEVENten]<br/>
           d0d1e<br/>
           ANNO<br/>
           YMD<br/>
           MINATO<br/>
-          mai<br/>
         </p>
       </section>
 
-      <section id="timetable" class="timetable">
-        <h1 class="mb-16">
-          TimeTable
-        </h1>
-        <p>
-          17:15 - 18:00 mai <br/>
-          18:00 - 19:00 MINATO <br/>
-          19:00 - 20:30 ANNO <br/>
-          20:30 - end  YMD <br/>
-        </p>
-      </section>
+<!--      <section id="timetable" class="timetable">-->
+<!--        <h1 class="mb-16">-->
+<!--          TimeTable-->
+<!--        </h1>-->
+<!--        <p>-->
+<!--          17:15 - 18:00 mai <br/>-->
+<!--          18:00 - 19:00 MINATO <br/>-->
+<!--          19:00 - 20:30 ANNO <br/>-->
+<!--          20:30 - end  YMD <br/>-->
+<!--        </p>-->
+<!--      </section>-->
 
       <section id="access" class="access">
         <div>
@@ -84,7 +84,7 @@
         </h1>
       </section>
       <footer class="footer">
-        more Infomation → <a href="https://www.facebook.com/events/248194976122728/" target="_blank">Facebook</a>
+<!--        more Infomation → <a href="https://www.facebook.com/events/248194976122728/" target="_blank">Facebook</a>-->
       </footer>
     </div>
   </div>
